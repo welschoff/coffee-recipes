@@ -10,6 +10,7 @@ function isValid(item: CoffeeProps) {
     typeof item.title === 'string' &&
     typeof item.description === 'string' &&
     Array.isArray(item.ingredients) &&
+    Array.isArray(item.tags) &&
     typeof item.image === 'string' &&
     item.image.startsWith('http')
   );
