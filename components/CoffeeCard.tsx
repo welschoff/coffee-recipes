@@ -11,8 +11,7 @@ export default function CoffeeCard({ ...props }: CoffeeProps) {
           alt="Coffee Image"
           fill
           className="object-cover rounded-full"
-          unoptimized
-          loading="eager"
+          priority
         />
       </div>
       <Divider />
