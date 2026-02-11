@@ -33,10 +33,6 @@ export const getStaticProps = (async () => {
 export default function ColdCoffeePage({
   data,
 }: InferGetServerSidePropsType<typeof getStaticProps>) {
-  const isValid = (recipe: CoffeeProps) =>
-    Boolean(
-      recipe.id && recipe.title && recipe.description && recipe.ingredients,
-    );
   return (
     <div className="bg-[#BA9D8A] p-5">
       <div className="flex flex-col pb-5 text-2xl">
